@@ -449,6 +449,38 @@ h4 { font-size: 1.25rem; }
   color: #ffffff;
 }
 
+.badge-new {
+  background: linear-gradient(135deg, #10b981, #059669);
+  color: #ffffff;
+  animation: pulse-new 2s ease-in-out infinite;
+}
+
+@keyframes pulse-new {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.8; }
+}
+
+/* "NEW" corner ribbon badge on grant cards */
+.new-badge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: linear-gradient(135deg, #10b981, #059669);
+  color: #ffffff;
+  font-size: 0.65rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  padding: 3px 10px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  box-shadow: 0 2px 4px rgba(16, 185, 129, 0.3);
+  z-index: 2;
+}
+
+.grant-card {
+  position: relative;
+}
+
 /* Category colors */
 .badge-education { background: #dbeafe; color: #1e40af; }
 .badge-health { background: #fce7f3; color: #9d174d; }

@@ -1,0 +1,16 @@
+{
+  "name": "grant-finder",
+  "version": "1.0.0",
+  "description": "Automated nonprofit grant database with daily data pulling from Grants.gov and state portals",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "fetch": "node scripts/fetch-grants.js",
+    "fetch:federal": "node scripts/fetch-grants-gov.js",
+    "fetch:state": "node scripts/fetch-state-grants.js",
+    "merge": "node scripts/merge-grants.js"
+  },
+  "dependencies": {
+    "node-fetch": "^3.3.2"
+  }
+}

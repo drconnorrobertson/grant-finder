@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GrantFinder - Latest Nonprofit Grants</title>
+    <link>https://grantfinder.org</link>
+    <description>The latest nonprofit grant opportunities from federal, state, and private sources. Updated daily.</description>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 22 Apr 2026 12:00:00 GMT</lastBuildDate>
+    <atom:link href="https://grantfinder.org/feed.xml" rel="self" type="application/rss+xml"/>
+    <ttl>1440</ttl>
+    <image>
+      <url>https://grantfinder.org/images/logo.png</url>
+      <title>GrantFinder</title>
+      <link>https://grantfinder.org</link>
+    </image>
+
+    <item>
+      <title><![CDATA[NEA Our Town]]></title>
+      <link>https://www.arts.gov/grants/our-town</link>
+      <description><![CDATA[Grants for projects that strengthen the social, cultural, and economic vitality of communities through the arts. | Funding: $25,000 - $200,000 | Deadline: 2026-07-15 | Category: Arts & Culture]]></description>
+      <category>Arts & Culture</category>
+      <pubDate>Wed, 22 Apr 2026 12:00:00 GMT</pubDate>
+      <guid isPermaLink="false">grantfinder-1</guid>
+    </item>
+
+    <item>
+      <title><![CDATA[NSF STEM Education]]></title>
+      <link>https://www.nsf.gov/funding/opportunities/stem-education</link>
+      <description><![CDATA[Funds innovative projects to improve STEM education at all levels. Supports curriculum development, teacher professional development, and research on STEM learning. | Funding: $100,000 - $1,000,000 | Deadline: 2026-08-15 | Category: Education]]></description>
+      <category>Education</category>
+      <pubDate>Wed, 22 Apr 2026 12:00:00 GMT</pubDate>
+      <guid isPermaLink="false">grantfinder-7</guid>
+    </item>
+
+    <item>
+      <title><![CDATA[NIH Research Project Grants (R01)]]></title>
+      <link>https://grants.nih.gov/grants/funding/r01.htm</link>
+      <description><![CDATA[Core NIH grant mechanism supporting research projects across all disease areas and biomedical research topics. | Funding: $250,000 - $2,000,000 | Deadline: Rolling | Category: Research]]></description>
+      <category>Research</category>
+      <pubDate>Wed, 22 Apr 2026 12:00:00 GMT</pubDate>
+      <guid isPermaLink="false">grantfinder-10</guid>
+    </item>
+
+    <item>
+      <title><![CDATA[DOE Energy Efficiency and Renewable Energy]]></title>
+      <link>https://www.energy.gov/eere/funding</link>
+      <description><![CDATA[Funds research, development, and deployment of clean energy technologies including solar, wind, geothermal, and energy storage. | Funding: $500,000 - $5,000,000 | Deadline: 2026-09-15 | Category: Environment]]></description>
+      <category>Environment</category>
+      <pubDate>Wed, 22 Apr 2026 12:00:00 GMT</pubDate>
+      <guid isPermaLink="false">grantfinder-26</guid>
+    </item>
+
+    <item>
+      <title><![CDATA[Ford Foundation - Expanding Opportunities]]></title>
+      <link>https://www.fordfoundation.org</link>
+      <description><![CDATA[Supports efforts to expand economic opportunity for low-income individuals through education, workforce development, and financial security. | Funding: $100,000 - $2,000,000 | Deadline: Rolling | Category: Social Services]]></description>
+      <category>Social Services</category>
+      <pubDate>Wed, 22 Apr 2026 12:00:00 GMT</pubDate>
+      <guid isPermaLink="false">grantfinder-28</guid>
+    </item>
+
+    <item>
+      <title><![CDATA[Bill & Melinda Gates Foundation - Education]]></title>
+      <link>https://www.gatesfoundation.org</link>
+      <description><![CDATA[Funds programs improving student learning and college access in U.S. schools and globally. | Funding: $500,000 - $10,000,000 | Deadline: Rolling | Category: Education]]></description>
+      <category>Education</category>
+      <pubDate>Wed, 22 Apr 2026 12:00:00 GMT</pubDate>
+      <guid isPermaLink="false">grantfinder-31</guid>
+    </item>
+
+    <item>
+      <title><![CDATA[Bill & Melinda Gates Foundation - Global Health]]></title>
+      <link>https://www.gatesfoundation.org</link>
+      <description><![CDATA[Supports programs to improve health outcomes globally, focusing on infectious diseases, maternal health, and health systems strengthening. | Funding: $1,000,000 - $50,000,000 | Deadline: Rolling | Category: Health]]></description>
+      <category>Health</category>
+      <pubDate>Wed, 22 Apr 2026 12:00:00 GMT</pubDate>
+      <guid isPermaLink="false">grantfinder-32</guid>
+    </item>
+
+    <item>
+      <title><![CDATA[Google.org AI for Social Good]]></title>
+      <link>https://www.google.org</link>
+      <description><![CDATA[Funds nonprofits using artificial intelligence and machine learning to address social and environmental challenges. | Funding: $50,000 - $3,000,000 | Deadline: Rolling | Category: Technology]]></description>
+      <category>Technology</category>
+      <pubDate>Wed, 22 Apr 2026 12:00:00 GMT</pubDate>
+      <guid isPermaLink="false">grantfinder-65</guid>
+    </item>
+
+    <item>
+      <title><![CDATA[Bloomberg Philanthropies - Environment]]></title>
+      <link>https://www.bloomberg.org</link>
+      <description><![CDATA[Funds climate action, clean energy transition, and environmental management initiatives globally. | Funding: $500,000 - $20,000,000 | Deadline: Rolling | Category: Environment]]></description>
+      <category>Environment</category>
+      <pubDate>Wed, 22 Apr 2026 12:00:00 GMT</pubDate>
+      <guid isPermaLink="false">grantfinder-49</guid>
+    </item>
+
+    <item>
+      <title><![CDATA[Moore Foundation - Science]]></title>
+      <link>https://www.moore.org</link>
+      <description><![CDATA[Funds scientific research advancing understanding of nature and solving complex environmental challenges. | Funding: $500,000 - $10,000,000 | Deadline: Rolling | Category: Research]]></description>
+      <category>Research</category>
+      <pubDate>Wed, 22 Apr 2026 12:00:00 GMT</pubDate>
+      <guid isPermaLink="false">grantfinder-63</guid>
+    </item>
+  </channel>
+</rss>

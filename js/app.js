@@ -88,15 +88,26 @@ function slugify(text) {
   return text.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
 }
 
+// Check if a grant was added in the last 7 days
+function isNewThisWeek(grant) {
+  if (!grant.dateAdded) return false;
+  const added = new Date(grant.dateAdded + 'T00:00:00');
+  const now = new Date();
+  const diffDays = Math.ceil((now - added) / (1000 * 60 * 60 * 24));
+  return diffDays <= 7;
+}
+
 // Generate a grant card HTML
 function renderGrantCard(grant) {
   const days = daysUntil(grant.deadline);
   const deadlineClass = days < 30 ? 'urgent' : '';
   const deadlineText = grant.deadline === 'Rolling' ? 'Rolling Deadline' : formatDate(grant.deadline);
   const statesText = grant.states.includes('National') ? 'National' : grant.states.slice(0, 3).join(', ') + (grant.states.length > 3 ? '...' : '');
+  const isNew = isNewThisWeek(grant);
 
   return `
     <div class="card grant-card" data-id="${grant.id}">
+      ${isNew ? '<div class="new-badge">NEW</div>' : ''}
       <div class="grant-card-header">
         <div>
           <div class="grant-card-title">
@@ -112,6 +123,7 @@ function renderGrantCard(grant) {
         <span class="badge badge-state">${statesText}</span>
         <span class="badge badge-deadline ${deadlineClass}">${deadlineText}</span>
         ${grant.featured ? '<span class="badge badge-featured">Featured</span>' : ''}
+        ${isNew ? '<span class="badge badge-new">New This Week</span>' : ''}
       </div>
       <div class="grant-card-footer">
         <a href="/grants/?id=${grant.id}" class="btn btn-sm btn-secondary" onclick="showGrantDetail(${grant.id}); return false;">View Details</a>
@@ -242,6 +254,7 @@ function getNavbarHTML(activePage) {
           <li><a href="/blog/" class="${activePage === 'blog' ? 'active' : ''}">Blog</a></li>
           <li><a href="/about/" class="${activePage === 'about' ? 'active' : ''}">About</a></li>
           <li><a href="/submit/" class="navbar-cta">Submit Grant</a></li>
+          <li><a href="/feed.xml" title="RSS Feed" class="rss-link">RSS</a></li>
         </ul>
         <button class="mobile-menu-btn" onclick="toggleMobileMenu()" aria-label="Toggle menu">
           <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -279,6 +292,7 @@ function getFooterHTML() {
               <li><a href="/about/">About Us</a></li>
               <li><a href="/blog/">Grant Writing Tips</a></li>
               <li><a href="https://www.grants.gov" target="_blank">Grants.gov</a></li>
+              <li><a href="/feed.xml">RSS Feed</a></li>
             </ul>
           </div>
           <div>
