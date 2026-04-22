@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - GrantFinder</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/data/grants.js"></script>
+    <script src="/js/app.js"></script>
+</head>
+<body>
+    <div id="navbar"></div>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>About GrantFinder</h1>
+                <p class="hero-subtitle">Our mission is to connect nonprofits with the funding they need</p>
+            </div>
+        </section>
+
+        <!-- About Grid Section -->
+        <section class="about-grid-section">
+            <div class="about-grid">
+                <div class="about-text">
+                    <h2>Democratizing Grant Access</h2>
+                    <p>GrantFinder was founded on a simple belief: every nonprofit deserves equal access to funding opportunities, regardless of size or resources. We've created a centralized platform that eliminates the barriers to finding grants, making it easier for organizations to focus on their mission rather than spending countless hours searching for funding.</p>
+                    <p>Many small and mid-sized nonprofits lack the dedicated grant research staff that larger organizations have. They struggle to navigate the fragmented landscape of federal, state, foundation, and corporate grants. GrantFinder levels the playing field by aggregating grant opportunities from thousands of sources into one searchable database.</p>
+                    <p>We believe that access to funding information is a public good. By consolidating and organizing grant data, we help nonprofits discover opportunities they wouldn't have found otherwise, and we help funders connect with organizations that align with their values and goals.</p>
+                </div>
+                <div class="about-image">🧭</div>
+            </div>
+        </section>
+
+        <!-- Values Section -->
+        <section class="values-section">
+            <h2>Our Core Values</h2>
+            <div class="values-grid">
+                <div class="value-card">
+                    <h3>Transparency</h3>
+                    <p>We believe in open access to grant data. All grant information on GrantFinder is publicly available and free to search, ensuring nonprofits can make informed decisions about where to apply.</p>
+                </div>
+                <div class="value-card">
+                    <h3>Accuracy</h3>
+                    <p>Grant information is verified and regularly updated to reflect the latest deadlines, requirements, and funding amounts. We partner with funders and community contributors to maintain data integrity.</p>
+                </div>
+                <div class="value-card">
+                    <h3>Accessibility</h3>
+                    <p>GrantFinder is free for all nonprofits. We're committed to ensuring that funding access is not limited by budget constraints, so our platform serves organizations of all sizes and types.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="stats-section">
+            <h2>GrantFinder by the Numbers</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">10,000+</div>
+                    <div class="stat-label">Active Grants</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">500+</div>
+                    <div class="stat-label">Verified Funders</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">50</div>
+                    <div class="stat-label">States Covered</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">$50B+</div>
+                    <div class="stat-label">Funding Available</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="cta-content">
+                <h2>Get Started Today</h2>
+                <p>Ready to find the right grant for your nonprofit? Search our database of thousands of opportunities.</p>
+                <a href="/" class="cta-button">Start Your Search</a>
+            </div>
+            <div class="contact-info">
+                <h3>Questions or Feedback?</h3>
+                <p>We'd love to hear from you. Contact us at <a href="mailto:info@grantfinder.org">info@grantfinder.org</a> or submit a grant opportunity to our platform.</p>
+                <a href="/submit/" class="secondary-button">Submit a Grant</a>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer"></div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            document.getElementById('navbar').innerHTML = getNavbarHTML('about');
+            document.getElementById('footer').innerHTML = getFooterHTML();
+        });
+    </script>
+</body>
+</html>

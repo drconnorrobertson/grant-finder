@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Browse grants available in your state. Find federal and state-specific funding opportunities for nonprofits.">
+    <meta name="keywords" content="grants by state, state grants, nonprofit funding, state-specific grants">
+    <meta name="theme-color" content="#2563eb">
+    <title>Browse by State - GrantFinder</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect fill='%234F46E5' width='100' height='100'/><text x='50' y='70' font-size='60' font-weight='bold' fill='white' text-anchor='middle'>G</text></svg>">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/data/grants.js"></script>
+    <script src="/js/app.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <div id="navbar"></div>
+
+    <!-- Hero Section -->
+    <section class="page-hero">
+        <h1>Browse by State</h1>
+        <p class="subtitle">Find grants available in your state</p>
+    </section>
+
+    <!-- Main Content -->
+    <main class="container">
+        <!-- National Grants Highlight Box -->
+        <section class="section">
+            <div id="nationalGrantsBox"></div>
+        </section>
+
+        <!-- States Grid -->
+        <section class="section">
+            <div class="states-grid" id="statesGridContainer"></div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer"></footer>
+
+    <!-- Scripts -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Render navbar
+            if (typeof getNavbarHTML === 'function') {
+                document.getElementById('navbar').innerHTML = getNavbarHTML('states');
+            }
+
+            // Render footer
+            if (typeof getFooterHTML === 'function') {
+                document.getElementById('footer').innerHTML = getFooterHTML();
+            }
+
+            // Render National Grants highlight box
+            if (typeof US_STATES !== 'undefined' && typeof getGrantCountByState === 'function') {
+                const nationalBox = document.getElementById('nationalGrantsBox');
+                if (nationalBox) {
+                    const nationalCount = GRANTS_DATA.filter(g => g.states.includes('National')).length;
+                    nationalBox.innerHTML = `
+                        <a href="/grants/?state=National" class="national-grants-box">
+                            <div class="national-grants-content">
+                                <h2>National Grants</h2>
+                                <p>Available to nonprofits across all states</p>
+                            </div>
+                            <div class="national-grants-count">
+                                <span class="count-number">${nationalCount}</span>
+                                <span class="count-label">grants</span>
+                            </div>
+                        </a>
+                    `;
+                }
+            }
+
+            // Render states grid
+            if (typeof US_STATES !== 'undefined' && typeof getGrantCountByState === 'function') {
+                const statesContainer = document.getElementById('statesGridContainer');
+                if (statesContainer) {
+                    // Sort states alphabetically by name
+                    const sortedStates = US_STATES.slice().sort((a, b) => a.name.localeCompare(b.name));
+
+                    statesContainer.innerHTML = sortedStates
+                        .map(state => {
+                            const count = getGrantCountByState(state.abbr);
+                            return `
+                                <a href="/grants/?state=${encodeURIComponent(state.abbr)}" class="state-card">
+                                    <span class="state-name">${state.name}</span>
+                                    <span class="count">${count}</span>
+                                </a>
+                            `;
+                        })
+                        .join('');
+                }
+            }
+        });
+    </script>
+
+    <style>
+        /* National Grants Highlight Box */
+        .national-grants-box {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 28px 32px;
+            background: linear-gradient(135deg, #00b4d8 0%, #0096c7 100%);
+            border-radius: var(--radius);
+            color: white;
+            text-decoration: none;
+            transition: var(--transition);
+            margin-bottom: 32px;
+        }
+
+        .national-grants-box:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(0, 180, 216, 0.2);
+        }
+
+        .national-grants-content h2 {
+            font-size: 1.5rem;
+            margin: 0 0 6px 0;
+            color: white;
+        }
+
+        .national-grants-content p {
+            margin: 0;
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 0.95rem;
+        }
+
+        .national-grants-count {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .national-grants-count .count-number {
+            font-size: 2rem;
+            font-weight: 700;
+            color: white;
+        }
+
+        .national-grants-count .count-label {
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        @media (max-width: 640px) {
+            .national-grants-box {
+                flex-direction: column;
+                text-align: center;
+                gap: 20px;
+            }
+
+            .national-grants-content h2 {
+                font-size: 1.25rem;
+            }
+        }
+    </style>
+</body>
+</html>

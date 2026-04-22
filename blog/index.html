@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - GrantFinder</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/data/grants.js"></script>
+    <script src="/js/app.js"></script>
+</head>
+<body>
+    <div id="navbar"></div>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Grant Writing Resources</h1>
+                <p class="hero-subtitle">Tips, guides, and insights for nonprofit funding</p>
+            </div>
+        </section>
+
+        <!-- Blog Grid Section -->
+        <section class="blog-section">
+            <div class="blog-grid">
+                <!-- Blog Post 1 -->
+                <article class="blog-card">
+                    <div class="blog-card-image">📝</div>
+                    <div class="blog-card-body">
+                        <h3><a href="#">10 Tips for Writing a Winning Grant Proposal</a></h3>
+                        <p>Discover the essential strategies for crafting compelling grant proposals that capture funder attention. Learn how to clearly articulate your nonprofit's impact, align with funder priorities, and present realistic budgets and timelines. These proven tips will increase your chances of securing funding for your organization's most important initiatives.</p>
+                        <div class="blog-meta">
+                            <span class="blog-date">February 14, 2026</span>
+                            <span class="blog-read-time">7 min read</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Blog Post 2 -->
+                <article class="blog-card">
+                    <div class="blog-card-image">🔍</div>
+                    <div class="blog-card-body">
+                        <h3><a href="#">How to Find the Right Grant for Your Nonprofit</a></h3>
+                        <p>Not all grants are created equal—finding ones that align with your mission is crucial. Learn how to use GrantFinder's search filters, research funder priorities, and assess grant fit before investing time in applications. This guide walks you through evaluating opportunities and focusing your limited resources on the most promising funding sources.</p>
+                        <div class="blog-meta">
+                            <span class="blog-date">February 7, 2026</span>
+                            <span class="blog-read-time">5 min read</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Blog Post 3 -->
+                <article class="blog-card">
+                    <div class="blog-card-image">❌</div>
+                    <div class="blog-card-body">
+                        <h3><a href="#">Common Grant Application Mistakes to Avoid</a></h3>
+                        <p>Even strong proposals can be rejected due to preventable errors. We break down the most common pitfalls—from missing deadlines and incomplete submissions to poorly formatted budgets and weak evaluation plans. Understanding these mistakes helps you strengthen your applications and avoid the minor errors that often result in rejection.</p>
+                        <div class="blog-meta">
+                            <span class="blog-date">January 31, 2026</span>
+                            <span class="blog-read-time">6 min read</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Blog Post 4 -->
+                <article class="blog-card">
+                    <div class="blog-card-image">💰</div>
+                    <div class="blog-card-body">
+                        <h3><a href="#">Building a Strong Nonprofit Budget for Grant Applications</a></h3>
+                        <p>Funders scrutinize budgets closely—a well-constructed financial plan demonstrates competence and responsibility. Learn how to develop realistic budgets, explain line items clearly, and show how grant funding will be managed effectively. This resource covers budget narratives, indirect costs, and strategies for presenting financial projections with confidence.</p>
+                        <div class="blog-meta">
+                            <span class="blog-date">January 24, 2026</span>
+                            <span class="blog-read-time">8 min read</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Blog Post 5 -->
+                <article class="blog-card">
+                    <div class="blog-card-image">🏛️</div>
+                    <div class="blog-card-body">
+                        <h3><a href="#">Federal vs. Foundation Grants: Which Is Right for You?</a></h3>
+                        <p>Federal and foundation grants each have distinct advantages and requirements. This guide compares timelines, application processes, reporting demands, and funding amounts to help you determine which funding sources best fit your nonprofit's capacity and goals. Understanding these differences allows you to develop a diversified funding strategy.</p>
+                        <div class="blog-meta">
+                            <span class="blog-date">January 17, 2026</span>
+                            <span class="blog-read-time">6 min read</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Blog Post 6 -->
+                <article class="blog-card">
+                    <div class="blog-card-image">📋</div>
+                    <div class="blog-card-body">
+                        <h3><a href="#">Grant Reporting: Best Practices for Compliance</a></h3>
+                        <p>Securing a grant is just the beginning—proper reporting is essential for maintaining funder relationships and securing future funding. We outline what funders typically require in grant reports, how to document impact effectively, and strategies for keeping organized records throughout your grant period. Strong reporting builds trust and opens doors for renewal funding.</p>
+                        <div class="blog-meta">
+                            <span class="blog-date">January 10, 2026</span>
+                            <span class="blog-read-time">7 min read</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="cta-content">
+                <h2>Ready to Apply?</h2>
+                <p>Use these resources alongside GrantFinder's database to find and win the grants your nonprofit needs.</p>
+                <a href="/" class="cta-button">Search Grants</a>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer"></div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            document.getElementById('navbar').innerHTML = getNavbarHTML('blog');
+            document.getElementById('footer').innerHTML = getFooterHTML();
+        });
+    </script>
+</body>
+</html>
