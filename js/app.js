@@ -292,6 +292,7 @@ function getFooterHTML() {
               <li><a href="/about/">About Us</a></li>
               <li><a href="/blog/">Grant Writing Tips</a></li>
               <li><a href="https://www.grants.gov" target="_blank">Grants.gov</a></li>
+              <li><a href="https://thepittsburghwire.com" target="_blank" rel="noopener">The Pittsburgh Wire</a></li>
               <li><a href="/feed.xml">RSS Feed</a></li>
             </ul>
           </div>
@@ -306,7 +307,7 @@ function getFooterHTML() {
         </div>
         <div class="footer-bottom">
           <span>&copy; ${new Date().getFullYear()} GrantFinder. All rights reserved.</span>
-          <span>Made with purpose for nonprofits everywhere.</span>
+          <span>A project by <a href="https://drconnorrobertson.com" target="_blank" rel="noopener">Dr. Connor Robertson</a> | Built by <a href="https://elixirconsultinggroup.com" target="_blank" rel="noopener">Elixir Consulting Group</a></span>
         </div>
       </div>
     </footer>
