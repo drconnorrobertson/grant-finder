@@ -4,43 +4,43 @@
     <loc>https://thegrantfinder.org/</loc>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
-    <lastmod>2026-04-24</lastmod>
+    <lastmod>2026-04-25</lastmod>
   </url>
   <url>
     <loc>https://thegrantfinder.org/grants/</loc>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
-    <lastmod>2026-04-24</lastmod>
+    <lastmod>2026-04-25</lastmod>
   </url>
   <url>
     <loc>https://thegrantfinder.org/categories/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-    <lastmod>2026-04-24</lastmod>
+    <lastmod>2026-04-25</lastmod>
   </url>
   <url>
     <loc>https://thegrantfinder.org/states/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-    <lastmod>2026-04-24</lastmod>
+    <lastmod>2026-04-25</lastmod>
   </url>
   <url>
     <loc>https://thegrantfinder.org/about/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <lastmod>2026-04-24</lastmod>
+    <lastmod>2026-04-25</lastmod>
   </url>
   <url>
     <loc>https://thegrantfinder.org/blog/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-    <lastmod>2026-04-24</lastmod>
+    <lastmod>2026-04-25</lastmod>
   </url>
   <url>
     <loc>https://thegrantfinder.org/submit/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
-    <lastmod>2026-04-24</lastmod>
+    <lastmod>2026-04-25</lastmod>
   </url>
   <url>
     <loc>https://thegrantfinder.org/blog/winning-grant-proposals/</loc>
@@ -77,5 +77,11 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <lastmod>2026-01-10</lastmod>
+  </url>
+  <url>
+    <loc>https://grantfinder.app/blog/ai-grant-writing-tools-2026/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <lastmod>2026-04-25</lastmod>
   </url>
 </urlset>
