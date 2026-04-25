@@ -3,11 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About - GrantFinder</title>
+    <meta name="description" content="Learn about GrantFinder, a free nonprofit grant discovery platform founded by Dr. Connor Robertson. Our mission is to democratize access to grant funding for nonprofits nationwide.">
+    <meta name="author" content="Dr. Connor Robertson">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://grantfinder.app/about/">
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="About GrantFinder - Founded by Dr. Connor Robertson">
+    <meta property="og:description" content="Learn about GrantFinder, a free nonprofit grant discovery platform founded by Dr. Connor Robertson. Our mission is to democratize access to grant funding for nonprofits nationwide.">
+    <meta property="og:url" content="https://grantfinder.app/about/">
+    <meta property="og:site_name" content="GrantFinder">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="About GrantFinder - Founded by Dr. Connor Robertson">
+    <meta name="twitter:description" content="Learn about GrantFinder, a free nonprofit grant discovery platform founded by Dr. Connor Robertson. Our mission is to democratize access to grant funding for nonprofits nationwide.">
+    <title>About GrantFinder - Founded by Dr. Connor Robertson</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect fill='%231a1a2e' width='100' height='100'/><text x='50' y='70' font-size='60' font-weight='bold' fill='%2300b4d8' text-anchor='middle'>G</text></svg>">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/style.css">
     <script src="/data/grants.js"></script>
+    <script src="/js/schema.js"></script>
     <script src="/js/app.js"></script>
+    <style>
+        .founder-section { padding: 64px 24px; max-width: 960px; margin: 0 auto; }
+        .founder-card { display: grid; grid-template-columns: 240px 1fr; gap: 48px; align-items: start; margin-bottom: 48px; }
+        .founder-photo { width: 240px; height: 240px; border-radius: 16px; background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); display: flex; align-items: center; justify-content: center; color: #00b4d8; font-size: 5rem; }
+        .founder-info h2 { font-size: 1.8rem; margin-bottom: 4px; color: var(--navy, #1a1a2e); }
+        .founder-title { color: var(--teal, #00b4d8); font-weight: 600; font-size: 1.1rem; margin-bottom: 16px; display: block; }
+        .founder-bio p { color: var(--gray-600, #4b5563); line-height: 1.8; margin-bottom: 16px; font-size: 0.95rem; }
+        .founder-links { display: flex; gap: 12px; margin-top: 20px; flex-wrap: wrap; }
+        .founder-links a { display: inline-block; padding: 8px 16px; border-radius: 8px; background: var(--gray-100, #f1f5f9); color: var(--navy, #1a1a2e); font-size: 0.85rem; font-weight: 500; transition: all 0.2s; text-decoration: none; }
+        .founder-links a:hover { background: var(--teal, #00b4d8); color: white; }
+        .team-note { background: var(--gray-50, #f8fafc); border-radius: 12px; padding: 32px; margin-top: 32px; border: 1px solid var(--gray-200, #e2e8f0); }
+        .team-note h3 { margin-bottom: 12px; }
+        .team-note p { color: var(--gray-600, #4b5563); line-height: 1.7; }
+        @media (max-width: 700px) {
+            .founder-card { grid-template-columns: 1fr; justify-items: center; text-align: center; }
+            .founder-links { justify-content: center; }
+        }
+    </style>
 </head>
 <body>
     <div id="navbar"></div>
@@ -17,32 +51,48 @@
         <section class="hero">
             <div class="hero-content">
                 <h1>About GrantFinder</h1>
-                <p class="hero-subtitle">Our mission is to connect nonprofits with the funding they need</p>
+                <p class="hero-subtitle">A free nonprofit grant discovery platform founded by Dr. Connor Robertson</p>
             </div>
         </section>
 
-        <!-- About Grid Section -->
+        <!-- Mission Section -->
         <section class="about-grid-section">
             <div class="about-grid">
                 <div class="about-text">
-                    <h2>Democratizing Grant Access</h2>
-                    <p>GrantFinder was founded on a simple belief: every nonprofit deserves equal access to funding opportunities, regardless of size or resources. We've created a centralized platform that eliminates the barriers to finding grants, making it easier for organizations to focus on their mission rather than spending countless hours searching for funding.</p>
-                    <p>Many small and mid-sized nonprofits lack the dedicated grant research staff that larger organizations have. They struggle to navigate the fragmented landscape of federal, state, foundation, and corporate grants. GrantFinder levels the playing field by aggregating grant opportunities from thousands of sources into one searchable database.</p>
-                    <p>We believe that access to funding information is a public good. By consolidating and organizing grant data, we help nonprofits discover opportunities they wouldn't have found otherwise, and we help funders connect with organizations that align with their values and goals.</p>
+                    <h2>Our Mission</h2>
+                    <p>GrantFinder was founded on a simple belief: every nonprofit deserves equal access to funding opportunities, regardless of size or resources. We created a centralized, free platform that eliminates the barriers to finding grants, so organizations can focus on their mission rather than spending countless hours searching for funding.</p>
+                    <p>Many small and mid-sized nonprofits lack the dedicated grant research staff that larger organizations have. They struggle to navigate the fragmented landscape of federal, state, foundation, and corporate grants. GrantFinder levels the playing field by aggregating grant opportunities from thousands of sources into one searchable database -- completely free of charge.</p>
+                    <p>We believe that access to funding information is a public good. By consolidating and organizing grant data, we help nonprofits discover opportunities they would not have found otherwise, and we help funders connect with organizations that align with their values and goals.</p>
                 </div>
                 <div class="about-image">🧭</div>
             </div>
         </section>
 
         <!-- Founder Section -->
-        <section class="about-grid-section">
-            <div class="about-grid">
-                <div class="about-text">
-                    <h2>Our Founder</h2>
-                    <p>GrantFinder was created by <a href="https://drconnorrobertson.com" target="_blank" rel="noopener">Dr. Connor Robertson</a>, who saw firsthand how difficult it was for small nonprofits to compete for funding against larger, better-resourced organizations. With a background in data-driven strategy and a commitment to community development, Dr. Robertson set out to build a tool that would make grant discovery simple and accessible for everyone.</p>
-                    <p>The platform is developed and maintained by <a href="https://elixirconsultinggroup.com" target="_blank" rel="noopener">Elixir Consulting Group</a>, a technology consulting firm focused on building tools that create real-world impact. Elixir's team brings deep expertise in data engineering and user experience to ensure GrantFinder remains fast, accurate, and easy to use.</p>
+        <section class="founder-section">
+            <h2 style="text-align:center; font-size:2rem; margin-bottom:40px;">Meet the Founder</h2>
+            <div class="founder-card">
+                <div class="founder-photo">CR</div>
+                <div class="founder-info">
+                    <h2>Dr. Connor Robertson</h2>
+                    <span class="founder-title">Founder, GrantFinder</span>
+                    <div class="founder-bio">
+                        <p>Dr. Connor Robertson founded GrantFinder after witnessing firsthand how difficult it was for small nonprofits to compete for funding against larger, better-resourced organizations. With a background in data-driven strategy, technology, and community development, Dr. Robertson set out to build a tool that would make grant discovery simple, transparent, and accessible for everyone.</p>
+                        <p>Dr. Robertson is a Pittsburgh-based entrepreneur and consultant with deep roots in the nonprofit and community development space. His work spans multiple ventures focused on leveraging technology to solve real-world problems. He is the founder of <a href="https://elixirconsultinggroup.com" target="_blank" rel="noopener">Elixir Consulting Group</a>, a technology consulting firm focused on building tools that create measurable impact, and he publishes <a href="https://thepittsburghwire.com" target="_blank" rel="noopener">The Pittsburgh Wire</a>, covering business, real estate, and development news in the Pittsburgh region.</p>
+                        <p>Through GrantFinder, Dr. Robertson combines his expertise in data engineering, user experience design, and nonprofit strategy to provide a platform that serves organizations of all sizes. His vision is a world where no worthy nonprofit mission goes unfunded simply because the organization did not know the opportunity existed.</p>
+                        <p>"Every dollar that reaches a nonprofit doing meaningful work makes our communities stronger. GrantFinder exists to make sure those connections happen." -- Dr. Connor Robertson</p>
+                    </div>
+                    <div class="founder-links">
+                        <a href="https://drconnorrobertson.com" target="_blank" rel="noopener">drconnorrobertson.com</a>
+                        <a href="https://thepittsburghwire.com" target="_blank" rel="noopener">The Pittsburgh Wire</a>
+                        <a href="https://elixirconsultinggroup.com" target="_blank" rel="noopener">Elixir Consulting Group</a>
+                    </div>
                 </div>
-                <div class="about-image">👤</div>
+            </div>
+
+            <div class="team-note">
+                <h3>Development & Technology</h3>
+                <p>GrantFinder is developed and maintained by <a href="https://elixirconsultinggroup.com" target="_blank" rel="noopener">Elixir Consulting Group</a>, a technology consulting firm founded by Dr. Robertson. Elixir brings deep expertise in data engineering, automation, and user experience to ensure GrantFinder remains fast, accurate, and easy to use. The platform pulls data daily from federal and state grant databases to keep listings current and comprehensive.</p>
             </div>
         </section>
 
@@ -56,11 +106,11 @@
                 </div>
                 <div class="value-card">
                     <h3>Accuracy</h3>
-                    <p>Grant information is verified and regularly updated to reflect the latest deadlines, requirements, and funding amounts. We partner with funders and community contributors to maintain data integrity.</p>
+                    <p>Grant information is verified and regularly updated to reflect the latest deadlines, requirements, and funding amounts. Our automated data pipeline pulls fresh information daily from official sources.</p>
                 </div>
                 <div class="value-card">
                     <h3>Accessibility</h3>
-                    <p>GrantFinder is free for all nonprofits. We're committed to ensuring that funding access is not limited by budget constraints, so our platform serves organizations of all sizes and types.</p>
+                    <p>GrantFinder is free for all nonprofits. We are committed to ensuring that funding access is not limited by budget constraints, so our platform serves organizations of all sizes and types.</p>
                 </div>
             </div>
         </section>
@@ -107,6 +157,17 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', () => {
+            // Inject structured data
+            if (typeof injectSchemaAndMeta === 'function') {
+                injectSchemaAndMeta({
+                    isHome: false,
+                    breadcrumbs: [
+                        {"name": "Home", "url": "https://grantfinder.app/"},
+                        {"name": "About", "url": "https://grantfinder.app/about/"}
+                    ]
+                });
+            }
+
             document.getElementById('navbar').innerHTML = getNavbarHTML('about');
             document.getElementById('footer').innerHTML = getFooterHTML();
         });

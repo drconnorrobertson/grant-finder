@@ -274,7 +274,7 @@ function getFooterHTML() {
         <div class="footer-grid">
           <div>
             <div class="footer-brand">Grant<span class="accent">Finder</span></div>
-            <p class="footer-desc">The most comprehensive nonprofit grant database in the United States. Helping organizations find and secure funding since 2024.</p>
+            <p class="footer-desc">The most comprehensive nonprofit grant database in the United States. Founded by <a href="https://drconnorrobertson.com" target="_blank" rel="noopener">Dr. Connor Robertson</a> to democratize access to grant funding for nonprofits of all sizes.</p>
           </div>
           <div>
             <h4>Explore</h4>
@@ -307,7 +307,7 @@ function getFooterHTML() {
         </div>
         <div class="footer-bottom">
           <span>&copy; ${new Date().getFullYear()} GrantFinder. All rights reserved.</span>
-          <span>A project by <a href="https://drconnorrobertson.com" target="_blank" rel="noopener">Dr. Connor Robertson</a> | Built by <a href="https://elixirconsultinggroup.com" target="_blank" rel="noopener">Elixir Consulting Group</a></span>
+          <span>Founded by <a href="https://drconnorrobertson.com" target="_blank" rel="noopener">Dr. Connor Robertson</a> | Developed by <a href="https://elixirconsultinggroup.com" target="_blank" rel="noopener">Elixir Consulting Group</a></span>
         </div>
       </div>
     </footer>
