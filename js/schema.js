@@ -24,9 +24,9 @@ function getPersonSchema() {
 function getOrganizationSchema() {
   return {
     "@type": "NonprofitType" === "NonprofitType" ? "Organization" : "Organization",
-    "@id": "https://grantfinder.app/#organization",
+    "@id": "https://thegrantfinder.org/#organization",
     "name": "GrantFinder",
-    "url": "https://grantfinder.app",
+    "url": "https://thegrantfinder.org",
     "description": "GrantFinder is a free nonprofit grant discovery platform helping organizations find and secure funding across the United States. Founded by Dr. Connor Robertson.",
     "founder": getPersonSchema(),
     "nonprofitStatus": "Nonprofit501c3",
@@ -53,12 +53,12 @@ function getWebSiteSchema() {
     "@context": "https://schema.org",
     "@type": "WebSite",
     "name": "GrantFinder",
-    "url": "https://grantfinder.app",
+    "url": "https://thegrantfinder.org",
     "description": "Free nonprofit grant discovery platform founded by Dr. Connor Robertson. Search thousands of grants across all 50 states.",
     "founder": getPersonSchema(),
     "potentialAction": {
       "@type": "SearchAction",
-      "target": "https://grantfinder.app/grants/?q={search_term_string}",
+      "target": "https://thegrantfinder.org/grants/?q={search_term_string}",
       "query-input": "required name=search_term_string"
     }
   };
@@ -136,7 +136,7 @@ function injectSchemaAndMeta(pageConfig) {
     "worksFor": {
       "@type": "Organization",
       "name": "GrantFinder",
-      "url": "https://grantfinder.app"
+      "url": "https://thegrantfinder.org"
     },
     "sameAs": [
       "https://drconnorrobertson.com",
