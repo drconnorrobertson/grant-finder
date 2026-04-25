@@ -16,7 +16,15 @@ function getPersonSchema() {
     "sameAs": [
       "https://drconnorrobertson.com",
       "https://thepittsburghwire.com",
-      "https://elixirconsultinggroup.com"
+      "https://elixirconsultinggroup.com",
+      "https://medium.com/@dr.connor.robertson",
+      "https://www.linkedin.com/in/dr-connor-robertson",
+      "https://x.com/drconnorre",
+      "https://youtube.com/@connorrobertsonacquisitions",
+      "https://www.threads.com/@creative_acquisitions",
+      "https://open.substack.com/pub/drconnorrobertson1",
+      "https://open.spotify.com/show/4VDPOlbe2RSSqukaSuYniX",
+      "https://podcasts.apple.com/us/podcast/the-prospecting-show-with-dr-connor-robertson/id1488353384"
     ]
   };
 }
@@ -24,9 +32,9 @@ function getPersonSchema() {
 function getOrganizationSchema() {
   return {
     "@type": "NonprofitType" === "NonprofitType" ? "Organization" : "Organization",
-    "@id": "https://thegrantfinder.org/#organization",
+    "@id": "https://grantfinder.app/#organization",
     "name": "GrantFinder",
-    "url": "https://thegrantfinder.org",
+    "url": "https://grantfinder.app",
     "description": "GrantFinder is a free nonprofit grant discovery platform helping organizations find and secure funding across the United States. Founded by Dr. Connor Robertson.",
     "founder": getPersonSchema(),
     "nonprofitStatus": "Nonprofit501c3",
@@ -53,12 +61,12 @@ function getWebSiteSchema() {
     "@context": "https://schema.org",
     "@type": "WebSite",
     "name": "GrantFinder",
-    "url": "https://thegrantfinder.org",
+    "url": "https://grantfinder.app",
     "description": "Free nonprofit grant discovery platform founded by Dr. Connor Robertson. Search thousands of grants across all 50 states.",
     "founder": getPersonSchema(),
     "potentialAction": {
       "@type": "SearchAction",
-      "target": "https://thegrantfinder.org/grants/?q={search_term_string}",
+      "target": "https://grantfinder.app/grants/?q={search_term_string}",
       "query-input": "required name=search_term_string"
     }
   };
@@ -80,7 +88,15 @@ function getBlogPostSchema(title, description, datePublished, url) {
       "sameAs": [
         "https://drconnorrobertson.com",
         "https://thepittsburghwire.com",
-        "https://elixirconsultinggroup.com"
+        "https://elixirconsultinggroup.com",
+        "https://medium.com/@dr.connor.robertson",
+        "https://www.linkedin.com/in/dr-connor-robertson",
+        "https://x.com/drconnorre",
+        "https://youtube.com/@connorrobertsonacquisitions",
+        "https://www.threads.com/@creative_acquisitions",
+        "https://open.substack.com/pub/drconnorrobertson1",
+        "https://open.spotify.com/show/4VDPOlbe2RSSqukaSuYniX",
+        "https://podcasts.apple.com/us/podcast/the-prospecting-show-with-dr-connor-robertson/id1488353384"
       ]
     },
     "publisher": getOrganizationSchema(),
@@ -136,12 +152,20 @@ function injectSchemaAndMeta(pageConfig) {
     "worksFor": {
       "@type": "Organization",
       "name": "GrantFinder",
-      "url": "https://thegrantfinder.org"
+      "url": "https://grantfinder.app"
     },
     "sameAs": [
       "https://drconnorrobertson.com",
       "https://thepittsburghwire.com",
-      "https://elixirconsultinggroup.com"
+      "https://elixirconsultinggroup.com",
+      "https://medium.com/@dr.connor.robertson",
+      "https://www.linkedin.com/in/dr-connor-robertson",
+      "https://x.com/drconnorre",
+      "https://youtube.com/@connorrobertsonacquisitions",
+      "https://www.threads.com/@creative_acquisitions",
+      "https://open.substack.com/pub/drconnorrobertson1",
+      "https://open.spotify.com/show/4VDPOlbe2RSSqukaSuYniX",
+      "https://podcasts.apple.com/us/podcast/the-prospecting-show-with-dr-connor-robertson/id1488353384"
     ]
   });
 
