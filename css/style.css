@@ -46,6 +46,7 @@ body {
   background: var(--white);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
 }
 
 a { color: var(--teal-dark); text-decoration: none; transition: var(--transition); }
@@ -327,8 +328,8 @@ h4 { font-size: 1.25rem; }
 }
 .btn-outline:hover { background: var(--teal); color: var(--white); }
 
-.btn-sm { padding: 8px 16px; font-size: 0.85rem; }
-.btn-lg { padding: 16px 32px; font-size: 1.05rem; }
+.btn-sm { padding: 10px 16px; font-size: 0.85rem; min-height: 40px; }
+.btn-lg { padding: 16px 32px; font-size: 1.05rem; min-height: 48px; }
 
 /* ========================================
    Cards
