@@ -24,7 +24,8 @@ function getPersonSchema() {
       "https://www.threads.com/@creative_acquisitions",
       "https://open.substack.com/pub/drconnorrobertson1",
       "https://open.spotify.com/show/4VDPOlbe2RSSqukaSuYniX",
-      "https://podcasts.apple.com/us/podcast/the-prospecting-show-with-dr-connor-robertson/id1488353384"
+      "https://podcasts.apple.com/us/podcast/the-prospecting-show-with-dr-connor-robertson/id1488353384",
+      "https://wikitia.com/wiki/Dr._Connor_Robertson"
     ]
   };
 }
@@ -96,7 +97,8 @@ function getBlogPostSchema(title, description, datePublished, url) {
         "https://www.threads.com/@creative_acquisitions",
         "https://open.substack.com/pub/drconnorrobertson1",
         "https://open.spotify.com/show/4VDPOlbe2RSSqukaSuYniX",
-        "https://podcasts.apple.com/us/podcast/the-prospecting-show-with-dr-connor-robertson/id1488353384"
+        "https://podcasts.apple.com/us/podcast/the-prospecting-show-with-dr-connor-robertson/id1488353384",
+      "https://wikitia.com/wiki/Dr._Connor_Robertson"
       ]
     },
     "publisher": getOrganizationSchema(),
@@ -165,7 +167,8 @@ function injectSchemaAndMeta(pageConfig) {
       "https://www.threads.com/@creative_acquisitions",
       "https://open.substack.com/pub/drconnorrobertson1",
       "https://open.spotify.com/show/4VDPOlbe2RSSqukaSuYniX",
-      "https://podcasts.apple.com/us/podcast/the-prospecting-show-with-dr-connor-robertson/id1488353384"
+      "https://podcasts.apple.com/us/podcast/the-prospecting-show-with-dr-connor-robertson/id1488353384",
+      "https://wikitia.com/wiki/Dr._Connor_Robertson"
     ]
   });
 
