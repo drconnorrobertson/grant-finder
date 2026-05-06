@@ -1192,3 +1192,109 @@ h4 { font-size: 1.25rem; }
 .gap-8 { gap: 8px; }
 .gap-16 { gap: 16px; }
 .hidden { display: none !important; }
+
+/* ========================================
+   Enhanced Mobile Optimization
+   ======================================== */
+
+/* Prevent horizontal overflow */
+html { overflow-x: hidden; }
+
+/* Ensure navbar mobile menu z-index */
+@media (max-width: 768px) {
+  .navbar .container {
+    flex-wrap: wrap;
+    height: auto;
+    min-height: 60px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+
+  .navbar-links.open {
+    z-index: 999;
+    gap: 0;
+    width: 100%;
+  }
+
+  .navbar-links.open a {
+    padding: 14px 16px;
+    min-height: 48px;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    border-bottom: 1px solid var(--gray-100);
+  }
+
+  .navbar-links.open .navbar-cta {
+    margin: 8px 0;
+    justify-content: center;
+    border-radius: var(--radius);
+    min-height: 48px;
+  }
+
+  /* Hero full width fix */
+  .hero { width: 100vw; margin-left: calc(-50vw + 50%); }
+  .page-hero { width: 100vw; margin-left: calc(-50vw + 50%); }
+
+  /* Search bar */
+  .search-bar { max-width: 100%; }
+  .search-bar input { font-size: 16px; padding: 14px 16px; } /* prevent iOS zoom */
+  .search-bar button { padding: 14px 20px; font-size: 0.95rem; }
+
+  /* Grant cards */
+  .grant-card { padding: 20px 16px; }
+
+  /* Filter controls */
+  .filter-group select,
+  .filter-group input {
+    font-size: 16px; /* prevent iOS zoom */
+    min-height: 48px;
+  }
+
+  /* Touch targets */
+  .btn, button, .navbar-cta, .grant-card a {
+    min-height: 44px;
+  }
+
+  /* Footer */
+  .footer { padding: 40px 16px 24px; }
+
+  /* Tables scroll */
+  table { display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+
+  /* Category cards in 1 col on small */
+  .category-card { padding: 16px; }
+
+  /* Blog post content */
+  .blog-content { padding: 0 16px; }
+  .blog-content img { max-width: 100%; height: auto; }
+
+  /* Modal full screen on mobile */
+  .modal {
+    width: 95vw;
+    max-width: 95vw;
+    max-height: 90vh;
+    margin: 5vh auto;
+  }
+
+  /* Submit form */
+  .submit-form { padding: 24px 16px; }
+}
+
+@media (max-width: 480px) {
+  .hero h1 { font-size: 1.8rem; }
+  .hero p { font-size: 0.95rem; margin-bottom: 24px; }
+  .hero-stats .stat-value { font-size: 1.4rem; }
+
+  .navbar .container { padding: 8px 12px; }
+
+  .grant-card-actions { flex-direction: column; gap: 8px; }
+  .grant-card-actions .btn { width: 100%; text-align: center; }
+
+  .categories-grid { grid-template-columns: 1fr; }
+  .states-grid { grid-template-columns: 1fr; }
+  .footer-grid { grid-template-columns: 1fr; }
+  .footer-bottom { flex-direction: column; gap: 12px; text-align: center; }
+
+  .container { padding: 0 12px; }
+}
