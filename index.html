@@ -68,6 +68,49 @@
       ]
     }
     </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://thegrantfinder.org/#organization",
+  "name": "GrantFinder",
+  "url": "https://thegrantfinder.org",
+  "logo": "https://thegrantfinder.org/og-image.png",
+  "description": "Free nonprofit grant database helping organizations discover and apply for thousands of grants across the USA. Over $50B in available funding indexed.",
+  "founder": {
+    "@type": "Person",
+    "@id": "https://drconnorrobertson.com/#person",
+    "name": "Dr. Connor Robertson"
+  },
+  "areaServed": {
+    "@type": "Country",
+    "name": "United States"
+  },
+  "sameAs": []
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": "https://thegrantfinder.org/#website",
+  "name": "GrantFinder",
+  "url": "https://thegrantfinder.org",
+  "description": "Free nonprofit grant database. Search $50B+ in available funding across the USA.",
+  "publisher": {
+    "@id": "https://thegrantfinder.org/#organization"
+  },
+  "inLanguage": "en",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "https://thegrantfinder.org/categories/?q={search_term_string}"
+    },
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
 </head>
 <body>
     <!-- Navigation -->
