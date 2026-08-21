@@ -180,5 +180,32 @@
         </div>
     </article>
     <div id="footer"></div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            if (typeof injectSchemaAndMeta === 'function') {
+                injectSchemaAndMeta({
+                    isHome: false,
+                    breadcrumbs: [
+                        {"name": "Home", "url": "https://thegrantfinder.org/"},
+                        {"name": "Blog", "url": "https://thegrantfinder.org/blog/"},
+                        {"name": "Government Funding Trends in 2026", "url": "https://thegrantfinder.org/blog/government-funding-trends-2026/"}
+                    ],
+                    blogPost: {
+                        title: "Government Funding Trends in 2026",
+                        description: "Dr. Connor Robertson breaks down the biggest trends reshaping federal and state funding in 2026.",
+                        datePublished: "2026-06-22",
+                        url: "https://thegrantfinder.org/blog/government-funding-trends-2026/"
+                    }
+                });
+            }
+            if (typeof getNavbarHTML === 'function') {
+                document.getElementById('navbar').innerHTML = getNavbarHTML('blog');
+            }
+            if (typeof getFooterHTML === 'function') {
+                document.getElementById('footer').innerHTML = getFooterHTML();
+            }
+        });
+    </script>
 </body>
 </html>

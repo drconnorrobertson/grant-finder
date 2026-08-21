@@ -291,8 +291,10 @@ function getFooterHTML() {
               <li><a href="/submit/">Submit a Grant</a></li>
               <li><a href="/about/">About Us</a></li>
               <li><a href="/blog/">Grant Writing Tips</a></li>
-              <li><a href="https://www.grants.gov" target="_blank">Grants.gov</a></li>
+              <li><a href="https://www.grants.gov" target="_blank" rel="noopener">Grants.gov</a></li>
+              <li><a href="https://drconnorrobertson.com" target="_blank" rel="noopener">Dr. Connor Robertson</a></li>
               <li><a href="https://thepittsburghwire.com" target="_blank" rel="noopener">The Pittsburgh Wire</a></li>
+              <li><a href="https://elixirconsultinggroup.com" target="_blank" rel="noopener">Elixir Consulting Group</a></li>
               <li><a href="/feed.xml">RSS Feed</a></li>
             </ul>
           </div>

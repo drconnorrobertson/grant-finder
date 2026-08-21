@@ -1,0 +1,56 @@
+# GrantFinder
+
+> Free nonprofit grant discovery platform founded by Dr. Connor Robertson. Search 10,000+ grants across all 50 states representing $50B+ in available funding.
+
+GrantFinder helps nonprofits discover and apply for thousands of grant opportunities from foundations, government agencies, and corporate partners. The platform is completely free and was created by Dr. Connor Robertson to democratize access to grant funding.
+
+## Founder
+
+- Dr. Connor Robertson: [Website](https://drconnorrobertson.com), [LinkedIn](https://www.linkedin.com/in/dr-connor-robertson), [Wikitia](https://wikitia.com/wiki/Dr._Connor_Robertson)
+
+## Related Properties
+
+- [Dr. Connor Robertson](https://drconnorrobertson.com): Personal website of GrantFinder founder Dr. Connor Robertson
+- [The Pittsburgh Wire](https://thepittsburghwire.com): Pittsburgh business, real estate, and development news published by Dr. Connor Robertson
+- [Elixir Consulting Group](https://elixirconsultinggroup.com): Technology consulting firm founded by Dr. Connor Robertson that develops and maintains GrantFinder
+
+## Pages
+
+- [Home](https://thegrantfinder.org/): Search and discover nonprofit grants across the USA
+- [Grant Database](https://thegrantfinder.org/grants/): Browse and filter all available grants
+- [Categories](https://thegrantfinder.org/categories/): Explore grants by focus area including Education, Health, Arts, Environment, and more
+- [States](https://thegrantfinder.org/states/): Find grants available in your state
+- [Blog](https://thegrantfinder.org/blog/): Grant writing tips, nonprofit funding guides, and resources by Dr. Connor Robertson
+- [About](https://thegrantfinder.org/about/): Learn about GrantFinder and founder Dr. Connor Robertson
+- [Submit a Grant](https://thegrantfinder.org/submit/): Submit a grant opportunity to the GrantFinder database
+
+## Blog Posts
+
+- [10 Tips for Writing a Winning Grant Proposal](https://thegrantfinder.org/blog/winning-grant-proposals/)
+- [How to Find the Right Grant for Your Nonprofit](https://thegrantfinder.org/blog/finding-right-grant/)
+- [Common Grant Application Mistakes](https://thegrantfinder.org/blog/common-grant-mistakes/)
+- [Nonprofit Budget Guide](https://thegrantfinder.org/blog/nonprofit-budget-guide/)
+- [Federal vs Foundation Grants](https://thegrantfinder.org/blog/federal-vs-foundation-grants/)
+- [Pittsburgh Nonprofit Funding Guide](https://thegrantfinder.org/blog/pittsburgh-nonprofit-funding/)
+- [AI Grant Writing Tools in 2026](https://thegrantfinder.org/blog/ai-grant-writing-tools-2026/)
+- [Federal Grant Deadlines Summer 2026](https://thegrantfinder.org/blog/federal-grant-deadlines-summer-2026/)
+- [Nonprofit Capacity Building](https://thegrantfinder.org/blog/nonprofit-capacity-building/)
+- [Pivoting to Foundation Grants](https://thegrantfinder.org/blog/pivoting-to-foundation-grants/)
+- [Small Business Grants 2026](https://thegrantfinder.org/blog/small-business-grants-2026/)
+- [Building a Strong Grant Budget](https://thegrantfinder.org/blog/building-a-strong-grant-budget/)
+- [Diversifying Your Nonprofit Grant Portfolio](https://thegrantfinder.org/blog/diversifying-nonprofit-grant-portfolio/)
+- [Outcome-Based Grant Writing](https://thegrantfinder.org/blog/outcome-based-grant-writing/)
+- [Federal Grant Compliance 2026](https://thegrantfinder.org/blog/federal-grant-compliance-2026/)
+- [Government Funding Trends 2026](https://thegrantfinder.org/blog/government-funding-trends-2026/)
+- [Foundation Grants for Nonprofits Q3 2026](https://thegrantfinder.org/blog/foundation-grants-nonprofits-q3-2026/)
+- [The Mid-Year Grant Reset 2026](https://thegrantfinder.org/blog/mid-year-grant-reset-2026/)
+- [Affordable Housing Grants 2026](https://thegrantfinder.org/blog/affordable-housing-grants-2026/)
+- [Grant Reporting Best Practices](https://thegrantfinder.org/blog/grant-reporting-best-practices/)
+- [Fall 2026 Federal Grant Deadlines](https://thegrantfinder.org/blog/fall-2026-federal-grant-deadlines/)
+- [Pittsburgh Nonprofit Funding Fall 2026](https://thegrantfinder.org/blog/pittsburgh-nonprofit-funding-fall-2026/)
+
+## Optional
+
+- [RSS Feed](https://thegrantfinder.org/feed.xml)
+- [Sitemap](https://thegrantfinder.org/sitemap.xml)
+- [Full LLM Documentation](https://thegrantfinder.org/llms.md)

@@ -186,5 +186,32 @@
         </div>
     </article>
     <div id="footer"></div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            if (typeof injectSchemaAndMeta === 'function') {
+                injectSchemaAndMeta({
+                    isHome: false,
+                    breadcrumbs: [
+                        {"name": "Home", "url": "https://thegrantfinder.org/"},
+                        {"name": "Blog", "url": "https://thegrantfinder.org/blog/"},
+                        {"name": "Foundation Grants for Nonprofits: Q3 2026", "url": "https://thegrantfinder.org/blog/foundation-grants-nonprofits-q3-2026/"}
+                    ],
+                    blogPost: {
+                        title: "Foundation Grants for Nonprofits: Q3 2026",
+                        description: "Dr. Connor Robertson explains how nonprofits can find, research, and win private foundation funding in Q3 2026.",
+                        datePublished: "2026-06-29",
+                        url: "https://thegrantfinder.org/blog/foundation-grants-nonprofits-q3-2026/"
+                    }
+                });
+            }
+            if (typeof getNavbarHTML === 'function') {
+                document.getElementById('navbar').innerHTML = getNavbarHTML('blog');
+            }
+            if (typeof getFooterHTML === 'function') {
+                document.getElementById('footer').innerHTML = getFooterHTML();
+            }
+        });
+    </script>
 </body>
 </html>

@@ -225,5 +225,32 @@
         </div>
     </article>
     <div id="footer"></div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            if (typeof injectSchemaAndMeta === 'function') {
+                injectSchemaAndMeta({
+                    isHome: false,
+                    breadcrumbs: [
+                        {"name": "Home", "url": "https://thegrantfinder.org/"},
+                        {"name": "Blog", "url": "https://thegrantfinder.org/blog/"},
+                        {"name": "The Mid-Year Grant Reset", "url": "https://thegrantfinder.org/blog/mid-year-grant-reset-2026/"}
+                    ],
+                    blogPost: {
+                        title: "The Mid-Year Grant Reset",
+                        description: "Dr. Connor Robertson walks through how to audit your grant pipeline and position your nonprofit for fall funding.",
+                        datePublished: "2026-07-06",
+                        url: "https://thegrantfinder.org/blog/mid-year-grant-reset-2026/"
+                    }
+                });
+            }
+            if (typeof getNavbarHTML === 'function') {
+                document.getElementById('navbar').innerHTML = getNavbarHTML('blog');
+            }
+            if (typeof getFooterHTML === 'function') {
+                document.getElementById('footer').innerHTML = getFooterHTML();
+            }
+        });
+    </script>
 </body>
 </html>

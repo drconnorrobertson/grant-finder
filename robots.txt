@@ -2,3 +2,7 @@ User-agent: *
 Allow: /
 
 Sitemap: https://thegrantfinder.org/sitemap.xml
+
+# LLM-friendly documentation
+# See https://thegrantfinder.org/llms.txt for structured site information
+# See https://thegrantfinder.org/llms.md for full documentation

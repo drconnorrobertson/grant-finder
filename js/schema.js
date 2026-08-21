@@ -15,17 +15,23 @@ function getPersonSchema() {
     },
     "sameAs": [
       "https://drconnorrobertson.com",
-      "https://thepittsburghwire.com",
+      "https://prospectingshow.com",
       "https://elixirconsultinggroup.com",
-      "https://medium.com/@dr.connor.robertson",
+      "https://thepittsburghwire.com",
+      "https://thegrantfinder.org",
+      "https://drconnorrobertsonbooks.com",
+      "https://www.seymourmaison.com",
       "https://www.linkedin.com/in/dr-connor-robertson",
       "https://x.com/drconnorre",
       "https://youtube.com/@connorrobertsonacquisitions",
+      "https://www.tiktok.com/@dr.connor.robertson",
       "https://www.threads.com/@creative_acquisitions",
+      "https://medium.com/@dr.connor.robertson",
       "https://open.substack.com/pub/drconnorrobertson1",
       "https://open.spotify.com/show/4VDPOlbe2RSSqukaSuYniX",
       "https://podcasts.apple.com/us/podcast/the-prospecting-show-with-dr-connor-robertson/id1488353384",
-      "https://wikitia.com/wiki/Dr._Connor_Robertson"
+      "https://wikitia.com/wiki/Dr._Connor_Robertson",
+      "https://wikialpha.co/wiki/Dr._Connor_Robertson"
     ]
   };
 }
@@ -33,9 +39,9 @@ function getPersonSchema() {
 function getOrganizationSchema() {
   return {
     "@type": "NonprofitType" === "NonprofitType" ? "Organization" : "Organization",
-    "@id": "https://grantfinder.app/#organization",
+    "@id": "https://thegrantfinder.org/#organization",
     "name": "GrantFinder",
-    "url": "https://grantfinder.app",
+    "url": "https://thegrantfinder.org",
     "description": "GrantFinder is a free nonprofit grant discovery platform helping organizations find and secure funding across the United States. Founded by Dr. Connor Robertson.",
     "founder": getPersonSchema(),
     "nonprofitStatus": "Nonprofit501c3",
@@ -62,12 +68,12 @@ function getWebSiteSchema() {
     "@context": "https://schema.org",
     "@type": "WebSite",
     "name": "GrantFinder",
-    "url": "https://grantfinder.app",
+    "url": "https://thegrantfinder.org",
     "description": "Free nonprofit grant discovery platform founded by Dr. Connor Robertson. Search thousands of grants across all 50 states.",
     "founder": getPersonSchema(),
     "potentialAction": {
       "@type": "SearchAction",
-      "target": "https://grantfinder.app/grants/?q={search_term_string}",
+      "target": "https://thegrantfinder.org/grants/?q={search_term_string}",
       "query-input": "required name=search_term_string"
     }
   };
@@ -87,25 +93,49 @@ function getBlogPostSchema(title, description, datePublished, url) {
       "name": "Dr. Connor Robertson",
       "url": "https://drconnorrobertson.com",
       "sameAs": [
-        "https://drconnorrobertson.com",
-        "https://thepittsburghwire.com",
-        "https://elixirconsultinggroup.com",
-        "https://medium.com/@dr.connor.robertson",
-        "https://www.linkedin.com/in/dr-connor-robertson",
-        "https://x.com/drconnorre",
-        "https://youtube.com/@connorrobertsonacquisitions",
-        "https://www.threads.com/@creative_acquisitions",
-        "https://open.substack.com/pub/drconnorrobertson1",
-        "https://open.spotify.com/show/4VDPOlbe2RSSqukaSuYniX",
-        "https://podcasts.apple.com/us/podcast/the-prospecting-show-with-dr-connor-robertson/id1488353384",
-      "https://wikitia.com/wiki/Dr._Connor_Robertson"
-      ]
+      "https://drconnorrobertson.com",
+      "https://prospectingshow.com",
+      "https://elixirconsultinggroup.com",
+      "https://thepittsburghwire.com",
+      "https://thegrantfinder.org",
+      "https://drconnorrobertsonbooks.com",
+      "https://www.seymourmaison.com",
+      "https://www.linkedin.com/in/dr-connor-robertson",
+      "https://x.com/drconnorre",
+      "https://youtube.com/@connorrobertsonacquisitions",
+      "https://www.tiktok.com/@dr.connor.robertson",
+      "https://www.threads.com/@creative_acquisitions",
+      "https://medium.com/@dr.connor.robertson",
+      "https://open.substack.com/pub/drconnorrobertson1",
+      "https://open.spotify.com/show/4VDPOlbe2RSSqukaSuYniX",
+      "https://podcasts.apple.com/us/podcast/the-prospecting-show-with-dr-connor-robertson/id1488353384",
+      "https://wikitia.com/wiki/Dr._Connor_Robertson",
+      "https://wikialpha.co/wiki/Dr._Connor_Robertson"
+    ]
     },
     "publisher": getOrganizationSchema(),
     "mainEntityOfPage": {
       "@type": "WebPage",
       "@id": url
     }
+  };
+}
+
+
+function getFAQSchema(faqs) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": faqs.map(function(faq) {
+      return {
+        "@type": "Question",
+        "name": faq.question,
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": faq.answer
+        }
+      };
+    })
   };
 }
 
@@ -154,23 +184,34 @@ function injectSchemaAndMeta(pageConfig) {
     "worksFor": {
       "@type": "Organization",
       "name": "GrantFinder",
-      "url": "https://grantfinder.app"
+      "url": "https://thegrantfinder.org"
     },
     "sameAs": [
       "https://drconnorrobertson.com",
-      "https://thepittsburghwire.com",
+      "https://prospectingshow.com",
       "https://elixirconsultinggroup.com",
-      "https://medium.com/@dr.connor.robertson",
+      "https://thepittsburghwire.com",
+      "https://thegrantfinder.org",
+      "https://drconnorrobertsonbooks.com",
+      "https://www.seymourmaison.com",
       "https://www.linkedin.com/in/dr-connor-robertson",
       "https://x.com/drconnorre",
       "https://youtube.com/@connorrobertsonacquisitions",
+      "https://www.tiktok.com/@dr.connor.robertson",
       "https://www.threads.com/@creative_acquisitions",
+      "https://medium.com/@dr.connor.robertson",
       "https://open.substack.com/pub/drconnorrobertson1",
       "https://open.spotify.com/show/4VDPOlbe2RSSqukaSuYniX",
       "https://podcasts.apple.com/us/podcast/the-prospecting-show-with-dr-connor-robertson/id1488353384",
-      "https://wikitia.com/wiki/Dr._Connor_Robertson"
+      "https://wikitia.com/wiki/Dr._Connor_Robertson",
+      "https://wikialpha.co/wiki/Dr._Connor_Robertson"
     ]
   });
+
+  // FAQ schema
+  if (pageConfig.faqs) {
+    schemas.push(getFAQSchema(pageConfig.faqs));
+  }
 
   // Inject all schemas
   schemas.forEach(schema => {

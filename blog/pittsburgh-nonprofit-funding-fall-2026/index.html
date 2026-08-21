@@ -198,5 +198,32 @@
         </div>
     </article>
     <div id="footer"></div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            if (typeof injectSchemaAndMeta === 'function') {
+                injectSchemaAndMeta({
+                    isHome: false,
+                    breadcrumbs: [
+                        {"name": "Home", "url": "https://thegrantfinder.org/"},
+                        {"name": "Blog", "url": "https://thegrantfinder.org/blog/"},
+                        {"name": "Pittsburgh Nonprofit Funding This Fall", "url": "https://thegrantfinder.org/blog/pittsburgh-nonprofit-funding-fall-2026/"}
+                    ],
+                    blogPost: {
+                        title: "Pittsburgh Nonprofit Funding This Fall",
+                        description: "Dr. Connor Robertson spotlights where Pittsburgh nonprofit funding is flowing this fall.",
+                        datePublished: "2026-08-17",
+                        url: "https://thegrantfinder.org/blog/pittsburgh-nonprofit-funding-fall-2026/"
+                    }
+                });
+            }
+            if (typeof getNavbarHTML === 'function') {
+                document.getElementById('navbar').innerHTML = getNavbarHTML('blog');
+            }
+            if (typeof getFooterHTML === 'function') {
+                document.getElementById('footer').innerHTML = getFooterHTML();
+            }
+        });
+    </script>
 </body>
 </html>
