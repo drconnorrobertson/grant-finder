@@ -1314,3 +1314,6 @@ p, blockquote { text-wrap: pretty; }
 .btn, .btn-primary, .btn-secondary, .btn-outline { transition: background-color .2s ease, color .2s ease, border-color .2s ease, box-shadow .2s ease, transform .2s ease; }
 
 h1 { letter-spacing: -.025em; } h2 { letter-spacing: -.018em; } .hero-subtitle { line-height: 1.75; }
+
+/* Honor reduced-motion preferences without repeating shortened animations. */
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-iteration-count: 1 !important; } }
