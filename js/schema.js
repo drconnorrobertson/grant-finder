@@ -18,7 +18,7 @@ function getPersonSchema() {
       "https://prospectingshow.com",
       "https://elixirconsultinggroup.com",
       "https://thepittsburghwire.com",
-      "https://thegrantfinder.org",
+      "https://www.thegrantfinder.org",
       "https://drconnorrobertsonbooks.com",
       "https://www.seymourmaison.com",
       "https://www.linkedin.com/in/dr-connor-robertson",
@@ -39,9 +39,9 @@ function getPersonSchema() {
 function getOrganizationSchema() {
   return {
     "@type": "NonprofitType" === "NonprofitType" ? "Organization" : "Organization",
-    "@id": "https://thegrantfinder.org/#organization",
+    "@id": "https://www.thegrantfinder.org/#organization",
     "name": "GrantFinder",
-    "url": "https://thegrantfinder.org",
+    "url": "https://www.thegrantfinder.org",
     "description": "GrantFinder is a free nonprofit grant discovery platform helping organizations find and secure funding across the United States. Founded by Dr. Connor Robertson.",
     "founder": getPersonSchema(),
     "nonprofitStatus": "Nonprofit501c3",
@@ -68,12 +68,12 @@ function getWebSiteSchema() {
     "@context": "https://schema.org",
     "@type": "WebSite",
     "name": "GrantFinder",
-    "url": "https://thegrantfinder.org",
+    "url": "https://www.thegrantfinder.org",
     "description": "Free nonprofit grant discovery platform founded by Dr. Connor Robertson. Search thousands of grants across all 50 states.",
     "founder": getPersonSchema(),
     "potentialAction": {
       "@type": "SearchAction",
-      "target": "https://thegrantfinder.org/grants/?q={search_term_string}",
+      "target": "https://www.thegrantfinder.org/grants/?q={search_term_string}",
       "query-input": "required name=search_term_string"
     }
   };
@@ -97,7 +97,7 @@ function getBlogPostSchema(title, description, datePublished, url) {
       "https://prospectingshow.com",
       "https://elixirconsultinggroup.com",
       "https://thepittsburghwire.com",
-      "https://thegrantfinder.org",
+      "https://www.thegrantfinder.org",
       "https://drconnorrobertsonbooks.com",
       "https://www.seymourmaison.com",
       "https://www.linkedin.com/in/dr-connor-robertson",
@@ -184,14 +184,14 @@ function injectSchemaAndMeta(pageConfig) {
     "worksFor": {
       "@type": "Organization",
       "name": "GrantFinder",
-      "url": "https://thegrantfinder.org"
+      "url": "https://www.thegrantfinder.org"
     },
     "sameAs": [
       "https://drconnorrobertson.com",
       "https://prospectingshow.com",
       "https://elixirconsultinggroup.com",
       "https://thepittsburghwire.com",
-      "https://thegrantfinder.org",
+      "https://www.thegrantfinder.org",
       "https://drconnorrobertsonbooks.com",
       "https://www.seymourmaison.com",
       "https://www.linkedin.com/in/dr-connor-robertson",

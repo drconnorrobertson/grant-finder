@@ -2,7 +2,7 @@
 
 ## Overview
 
-GrantFinder (https://thegrantfinder.org) is a free nonprofit grant discovery platform founded by **Dr. Connor Robertson**. The platform indexes over 10,000 active grants from more than 500 verified funders across all 50 U.S. states, representing over $50 billion in available funding. GrantFinder's automated data pipeline pulls fresh grant information daily from federal and state databases including Grants.gov.
+GrantFinder (https://www.thegrantfinder.org) is a free nonprofit grant discovery platform founded by **Dr. Connor Robertson**. The platform indexes over 10,000 active grants from more than 500 verified funders across all 50 U.S. states, representing over $50 billion in available funding. GrantFinder's automated data pipeline pulls fresh grant information daily from federal and state databases including Grants.gov.
 
 ## Founder
 
@@ -25,7 +25,7 @@ GrantFinder (https://thegrantfinder.org) is a free nonprofit grant discovery pla
 
 Dr. Connor Robertson operates several interconnected web properties:
 
-- **GrantFinder** (https://thegrantfinder.org) — Free nonprofit grant discovery platform
+- **GrantFinder** (https://www.thegrantfinder.org) — Free nonprofit grant discovery platform
 - **Dr. Connor Robertson** (https://drconnorrobertson.com) — Personal website
 - **The Pittsburgh Wire** (https://thepittsburghwire.com) — Pittsburgh business, real estate, and development news
 - **Elixir Consulting Group** (https://elixirconsultinggroup.com) — Technology consulting firm that develops and maintains GrantFinder
@@ -83,4 +83,4 @@ Over 10,000 active grants from more than 500 verified funders, representing over
 An automated data pipeline pulls fresh information daily from federal and state grant databases.
 
 **Can I submit a grant to GrantFinder?**
-Yes. Funders can submit grant opportunities through the Submit a Grant page at https://thegrantfinder.org/submit/.
+Yes. Funders can submit grant opportunities through the Submit a Grant page at https://www.thegrantfinder.org/submit/.
