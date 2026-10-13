@@ -1,0 +1,8 @@
+{
+  "index.html": {
+    "title": "Nonprofit Grant Finder | Search Funding Opportunities",
+    "description": "Search GrantFinder’s nonprofit grant database, compare eligibility and funder requirements, and follow the original program source before applying.",
+    "heading": "Choose a grant opportunity by eligibility and fit",
+    "body": "<p>Start with <a href=\"/grants/\">the grant database</a> and narrow the research to your nonprofit’s mission, geography and project. Use each funder’s original source to confirm current eligibility, dates, application instructions and any required match.</p><p>Compare <a href=\"/blog/federal-vs-foundation-grants/\">federal and foundation funding</a> and review <a href=\"/blog/winning-grant-proposals/\">proposal preparation</a> before investing time in an application. A database listing does not establish that funding remains open or that an applicant will receive an award.</p>"
+  }
+}
