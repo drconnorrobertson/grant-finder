@@ -80,6 +80,6 @@
       "schedule": "0 6 * * *"
     }
   ],
-  "buildCommand": "node scripts/buyer-intent-release.cjs .",
+  "buildCommand": "node scripts/render-home.cjs && node scripts/buyer-intent-release.cjs .",
   "outputDirectory": "."
 }

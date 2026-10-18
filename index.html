@@ -81,7 +81,7 @@
   "name": "GrantFinder",
   "url": "https://www.thegrantfinder.org",
   "logo": "https://www.thegrantfinder.org/og-image.png",
-  "description": "Free nonprofit grant database helping organizations discover and apply for thousands of grants across the USA. Over $50B in available funding indexed.",
+  "description": "Research nonprofit funding program records and verify availability with the original funder.",
   "founder": {
     "@type": "Person",
     "@id": "https://drconnorrobertson.com/#person",
@@ -101,7 +101,7 @@
   "@id": "https://www.thegrantfinder.org/#website",
   "name": "GrantFinder",
   "url": "https://www.thegrantfinder.org",
-  "description": "Free nonprofit grant database. Search $50B+ in available funding across the USA.",
+  "description": "Search nonprofit funding program records and check the original source before applying.",
   "publisher": {
     "@id": "https://www.thegrantfinder.org/#organization"
   },
@@ -150,7 +150,7 @@
       "name": "How many grants are listed on GrantFinder?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "GrantFinder indexes over 10,000 active grants from more than 500 verified funders across all 50 states, representing over $50 billion in available funding. The database is updated daily with new opportunities from federal, state, foundation, and corporate sources."
+        "text": "GrantFinder currently bundles 122 program records. Records may include past cycles; verify current dates, eligibility and funding with the original source."
       }
     },
     {
@@ -185,7 +185,7 @@
                     Find Grants for Your <span class="highlight">Nonprofit</span>
                 </h1>
                 <p class="hero-subtitle">
-                    Discover thousands of grant opportunities from foundations, government agencies, and corporate partners. We make finding the right funding simple and efficient.
+                    Research nonprofit funding programs from foundations, government agencies, and corporate partners. We make finding the right funding simple and efficient.
                 </p>
 
                 <!-- Search Bar -->
@@ -202,16 +202,16 @@
                 <!-- Stats Row -->
                 <div class="hero-stats">
                     <div class="stat">
-                        <span class="stat-value">10,000+</span>
-                        <span class="stat-label">Grants Listed</span>
+                        <span class="stat-value">122</span>
+                        <span class="stat-label">Program Records</span>
                     </div>
                     <div class="stat">
                         <span class="stat-value">50</span>
                         <span class="stat-label">States Covered</span>
                     </div>
                     <div class="stat">
-                        <span class="stat-value">$50B+</span>
-                        <span class="stat-label">Available Funding</span>
+                        <span class="stat-value">10</span>
+                        <span class="stat-label">Funding Categories</span>
                     </div>
                 </div>
             </div>
@@ -223,9 +223,14 @@
         <div class="container">
             <div class="section-header">
                 <h2>Featured Grants</h2>
-                <p>Handpicked opportunities worth your attention</p>
+                <p>Program research starting points. Confirm the current cycle, eligibility and deadline with each funder.</p>
             </div>
-            <div id="featuredGrants" class="grants-grid"></div>
+            <div id="featuredGrants" class="grants-grid"><article class="card grant-card"><h3><a href="/grants/?id=10">NIH Research Project Grants (R01)</a></h3><p>National Institutes of Health</p><p>Core NIH grant mechanism supporting research projects across all disease areas and biomedical research topics. Provides multi-year funding for independent research teams.</p><p>Recorded deadline: Rolling. Dates and availability must be confirmed with the funder.</p><a href="https://grants.nih.gov/grants/funding/r01.htm" target="_blank" rel="noopener">Check the official program source</a></article>
+<article class="card grant-card"><h3><a href="/grants/?id=28">Ford Foundation - Expanding Opportunities</a></h3><p>Ford Foundation</p><p>Supports efforts to expand economic opportunity for low-income individuals and communities through education, workforce development, and financial security.</p><p>Recorded deadline: Rolling. Dates and availability must be confirmed with the funder.</p><a href="https://www.fordfoundation.org" target="_blank" rel="noopener">Check the official program source</a></article>
+<article class="card grant-card"><h3><a href="/grants/?id=31">Bill &amp; Melinda Gates Foundation - Education</a></h3><p>Bill &amp; Melinda Gates Foundation</p><p>Funds programs improving student learning and college access in U.S. schools and globally. Supports education innovation and teacher effectiveness.</p><p>Recorded deadline: Rolling. Dates and availability must be confirmed with the funder.</p><a href="https://www.gatesfoundation.org" target="_blank" rel="noopener">Check the official program source</a></article>
+<article class="card grant-card"><h3><a href="/grants/?id=32">Bill &amp; Melinda Gates Foundation - Global Health</a></h3><p>Bill &amp; Melinda Gates Foundation</p><p>Supports programs to improve health outcomes globally, focusing on infectious diseases, maternal health, and health systems strengthening.</p><p>Recorded deadline: Rolling. Dates and availability must be confirmed with the funder.</p><a href="https://www.gatesfoundation.org" target="_blank" rel="noopener">Check the official program source</a></article>
+<article class="card grant-card"><h3><a href="/grants/?id=49">Bloomberg Philanthropies - Environment</a></h3><p>Bloomberg Philanthropies</p><p>Funds climate action, clean energy transition, and environmental management initiatives globally.</p><p>Recorded deadline: Rolling. Dates and availability must be confirmed with the funder.</p><a href="https://www.bloomberg.org" target="_blank" rel="noopener">Check the official program source</a></article>
+<article class="card grant-card"><h3><a href="/grants/?id=63">Moore Foundation - Science</a></h3><p>Gordon and Betty Moore Foundation</p><p>Funds scientific research advancing understanding of nature and solving complex environmental challenges.</p><p>Recorded deadline: Rolling. Dates and availability must be confirmed with the funder.</p><a href="https://www.moore.org" target="_blank" rel="noopener">Check the official program source</a></article></div><!-- prerender:featuredGrants -->
         </div>
     </section>
 
@@ -236,7 +241,16 @@
                 <h2>Browse by Category</h2>
                 <p>Explore funding opportunities by focus area</p>
             </div>
-            <div id="categoriesGrid" class="categories-grid"></div>
+            <div id="categoriesGrid" class="categories-grid"><a class="category-card" href="/grants/?category=Education"><h3>Education</h3><p>21 program records</p></a>
+<a class="category-card" href="/grants/?category=Health"><h3>Health</h3><p>12 program records</p></a>
+<a class="category-card" href="/grants/?category=Arts%20%26%20Culture"><h3>Arts &amp; Culture</h3><p>14 program records</p></a>
+<a class="category-card" href="/grants/?category=Environment"><h3>Environment</h3><p>18 program records</p></a>
+<a class="category-card" href="/grants/?category=Social%20Services"><h3>Social Services</h3><p>9 program records</p></a>
+<a class="category-card" href="/grants/?category=Technology"><h3>Technology</h3><p>10 program records</p></a>
+<a class="category-card" href="/grants/?category=Community%20Development"><h3>Community Development</h3><p>18 program records</p></a>
+<a class="category-card" href="/grants/?category=Youth%20Development"><h3>Youth Development</h3><p>5 program records</p></a>
+<a class="category-card" href="/grants/?category=Housing"><h3>Housing</h3><p>5 program records</p></a>
+<a class="category-card" href="/grants/?category=Research"><h3>Research</h3><p>10 program records</p></a></div><!-- prerender:categoriesGrid -->
         </div>
     </section>
 
@@ -261,7 +275,7 @@
                 <div class="step-card">
                     <div class="step-number">3</div>
                     <h3>Get Funded</h3>
-                    <p>Submit your application and track your progress. Our platform helps you manage deadlines and follow up on submissions.</p>
+                    <p>Submit through the funder’s official application process. Keep your own calendar of deadlines and follow-up dates.</p>
                 </div>
             </div>
         </div>
@@ -337,7 +351,7 @@
             // Populate Featured Grants
             if (typeof GRANTS_DATA !== 'undefined' && typeof renderGrantCard === 'function') {
                 const featuredContainer = document.getElementById('featuredGrants');
-                if (featuredContainer) {
+                if (featuredContainer && !featuredContainer.children.length) {
                     const featuredGrants = GRANTS_DATA.filter(g => g.featured);
                     featuredContainer.innerHTML = featuredGrants
                         .map(g => renderGrantCard(g))
@@ -349,7 +363,7 @@
             if (typeof CATEGORIES !== 'undefined' && typeof getCategoryIcon === 'function' &&
                 typeof getGrantCountByCategory === 'function' && typeof getCategoryColor === 'function') {
                 const categoriesContainer = document.getElementById('categoriesGrid');
-                if (categoriesContainer) {
+                if (categoriesContainer && !categoriesContainer.children.length) {
                     categoriesContainer.innerHTML = CATEGORIES
                         .map(category => {
                             const icon = getCategoryIcon(category);
