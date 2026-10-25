@@ -1,0 +1,10 @@
+const fs=require('fs'),path=require('path');
+const root=process.argv[2]||'.';
+const data=JSON.parse(fs.readFileSync(path.join(__dirname,'practical-homepage.json'),'utf8'));
+const p=path.join(root,'index.html');let s=fs.readFileSync(p,'utf8');
+s=s.replace(/<!-- practical-depth:start -->[\s\S]*?<!-- practical-depth:end -->/g,'');
+const e=s=>s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/"/g,'&quot;');
+const block='<!-- practical-depth:start --><section class="section practical-depth" aria-labelledby="practical-depth-title" style="padding:48px 0"><div class="container wrap" style="max-width:900px;margin:0 auto;padding:0 24px"><h2 id="practical-depth-title">'+e(data.heading)+'</h2>'+data.body+'</div></section><!-- practical-depth:end -->';
+if(/<\/main>/i.test(s))s=s.replace(/<\/main>/i,block+'</main>');else if(/<footer\b/i.test(s))s=s.replace(/<footer\b/i,block+'<footer');else throw Error('No content insertion target');
+fs.writeFileSync(p,s);if((s.match(/practical-depth:start/g)||[]).length!==1)throw Error('Duplicate content block');
+console.log('Practical homepage content applied: '+p);
