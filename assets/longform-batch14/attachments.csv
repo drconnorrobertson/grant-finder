@@ -1,0 +1,4 @@
+example,item,context,known_state,open_question_or_limit
+EXAMPLE-A,Project description,Fictional field A,Approved local version identified,Uploaded content not yet checked
+EXAMPLE-B,Budget explanation,Fictional field B,Two candidate local versions,Responsible approval unresolved
+EXAMPLE-C,Support letter,Fictional field C,Local file opens,Not submitted or received
