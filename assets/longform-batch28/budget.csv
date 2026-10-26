@@ -1,0 +1,7 @@
+fictional_period,activity,quantity,unit,invented_USD_per_unit,amount_USD
+P1,Facilitator,60,hours,40,2400
+P1,Materials,80,kits,12,960
+P1,Room,6,bookings,100,600
+P2,Facilitator,70,hours,40,2800
+P2,Materials,100,kits,12,1200
+P2,Room,8,bookings,100,800
