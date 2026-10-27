@@ -1,0 +1,5 @@
+fictional_case,contribution_base,fixed_input,fixed_amount,funder_amount,contribution_amount,included_total
+A,20percent_funder,funder,100000,100000,20000,120000
+B,20percent_total,funder,100000,100000,25000,125000
+C,20percent_total,total,100000,80000,20000,100000
+D,20percent_total,contribution,15000,60000,15000,75000
