@@ -38,13 +38,12 @@ function getPersonSchema() {
 
 function getOrganizationSchema() {
   return {
-    "@type": "NonprofitType" === "NonprofitType" ? "Organization" : "Organization",
+    "@type": "Organization",
     "@id": "https://www.thegrantfinder.org/#organization",
     "name": "GrantFinder",
     "url": "https://www.thegrantfinder.org",
     "description": "GrantFinder is a free nonprofit grant discovery platform helping organizations find and secure funding across the United States. Founded by Dr. Connor Robertson.",
     "founder": getPersonSchema(),
-    "nonprofitStatus": "Nonprofit501c3",
     "areaServed": "United States",
     "knowsAbout": ["nonprofit grants", "government funding", "grant writing", "nonprofit resources", "community development"]
   };
@@ -69,7 +68,7 @@ function getWebSiteSchema() {
     "@type": "WebSite",
     "name": "GrantFinder",
     "url": "https://www.thegrantfinder.org",
-    "description": "Free nonprofit grant discovery platform founded by Dr. Connor Robertson. Search thousands of grants across all 50 states.",
+    "description": "Free nonprofit funding research directory founded by Dr. Connor Robertson. Check each program with its original funder.",
     "founder": getPersonSchema(),
     "potentialAction": {
       "@type": "SearchAction",

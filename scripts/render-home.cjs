@@ -25,3 +25,13 @@ t=t.replace(/Free nonprofit grant database helping organizations discover and ap
 t=t.replace('if (featuredContainer) {','if (featuredContainer && !featuredContainer.children.length) {').replace('if (categoriesContainer) {','if (categoriesContainer && !categoriesContainer.children.length) {');
 fs.writeFileSync(path.join(root,'index.html'),t);
 console.log(`Rendered ${selected.length} programs, ${categories.length} categories from ${count} records.`);
+
+// Keep the About page's inventory counts tied to the same bundled records.
+const aboutPath=path.join(root,'about/index.html');
+let about=fs.readFileSync(aboutPath,'utf8');
+for(const [id,value] of Object.entries({'scope-records':count,'scope-funders':new Set(grants.map(g=>g.funder).filter(Boolean)).size,'scope-categories':categories.length})) {
+ const pattern=new RegExp('(<div class="stat-number" id="'+id+'">)[^<]*(</div>)');
+ if(!pattern.test(about))throw Error('Missing About inventory count: '+id);
+ about=about.replace(pattern,(_,open,close)=>open+value+close);
+}
+fs.writeFileSync(aboutPath,about);
