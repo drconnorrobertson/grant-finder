@@ -7,7 +7,7 @@
  * Environment variables required:
  * - GITHUB_TOKEN: Personal access token with repo write access
  * - GITHUB_REPO: Repository in format "owner/repo"
- * - CRON_SECRET: Secret to protect the endpoint (optional but recommended)
+ * - CRON_SECRET: Required bearer secret protecting this write-capable endpoint
  */
 
 export const config = {
@@ -125,8 +125,7 @@ async function updateViaGitHub(newGrants) {
   );
 
   if (!updateResponse.ok) {
-    const errorBody = await updateResponse.text();
-    throw new Error(`GitHub commit failed: ${updateResponse.status} - ${errorBody}`);
+    throw new Error(`GitHub commit failed: ${updateResponse.status}`);
   }
 
   return {
@@ -137,12 +136,18 @@ async function updateViaGitHub(newGrants) {
 }
 
 export default async function handler(req, res) {
-  // Verify cron secret if configured
-  if (process.env.CRON_SECRET) {
-    const authHeader = req.headers.authorization;
-    if (authHeader !== `Bearer ${process.env.CRON_SECRET}`) {
-      return res.status(401).json({ error: 'Unauthorized' });
-    }
+  res.setHeader('Cache-Control', 'no-store');
+  if (!['GET', 'POST'].includes(req.method)) {
+    res.setHeader('Allow', 'GET, POST');
+    return res.status(405).json({ error: 'Method not allowed' });
+  }
+  // Never turn missing deployment configuration into public write access.
+  const secret = process.env.CRON_SECRET;
+  if (!secret) {
+    return res.status(503).json({ error: 'Grant refresh is not configured' });
+  }
+  if (req.headers?.authorization !== `Bearer ${secret}`) {
+    return res.status(401).json({ error: 'Unauthorized' });
   }
 
   try {
@@ -176,7 +181,7 @@ export default async function handler(req, res) {
     console.error('Grant fetch error:', error);
     return res.status(500).json({
       success: false,
-      error: error.message,
+      error: 'Grant refresh failed',
       timestamp: new Date().toISOString()
     });
   }
